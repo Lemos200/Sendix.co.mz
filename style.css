@@ -171,7 +171,7 @@ a{color:inherit
 .hero{
     position:relative;
     height:clamp(380px,56vw,520px);
-    background:url(imagens/Fundo.png);
+    background:url(Fundo.png);
     overflow:hidden;
     color:#fff}
 .hero .item{position:absolute;inset:0;
