@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fazer Pedido | Sendix</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="pedido.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="in">
+    <a class="logo" href="index.html">Sendix</a>
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="menu" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#produtos">Produtos</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+        <li><a class="btn" href="pedido.html">Fazer Pedido</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="pedido-topo">
+    <div class="in">
+      <h1>Fazer Pedido</h1>
+      <p>Preencha os dados abaixo. O pedido segue para o nosso WhatsApp.</p>
+    </div>
+  </section>
+
+  <div class="pedido-corpo">
+
+    <form id="f" class="cartao" novalidate>
+
+      <section class="bloco">
+        <h2><span>1</span>Os seus dados</h2>
+        <label for="nome">Nome completo</label>
+        <input id="nome" required autocomplete="name" placeholder="Ex.: Maria Santos">
+        <div class="err">Escreva o seu nome.</div>
+
+        <label for="tel">Telefone</label>
+        <input id="tel" type="tel" required autocomplete="tel" placeholder="84 000 0000">
+        <div class="err">Escreva o seu telefone.</div>
+      </section>
+
+      <section class="bloco">
+        <h2><span>2</span>O seu pedido</h2>
+        <label for="prod">Produto ou serviço</label>
+        <input id="prod" required placeholder="O que deseja encomendar?">
+        <div class="err">Diga o que deseja encomendar.</div>
+
+        <div class="linha">
+          <div>
+            <label for="qtd">Quantidade</label>
+            <input id="qtd" type="number" min="1" value="1" required>
+            <div class="err">Indique a quantidade.</div>
+          </div>
+          <div>
+            <label for="ent">Recebimento</label>
+            <select id="ent">
+              <option>Entrega ao domicílio</option>
+              <option>Levantamento no local</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="bloco">
+        <h2><span>3</span>Entrega e detalhes</h2>
+        <label for="end">Endereço / bairro</label>
+        <input id="end" autocomplete="street-address" placeholder="Para entregas">
+
+        <label for="obs">Observações <small>(opcional)</small></label>
+        <textarea id="obs" placeholder="Detalhes, data desejada, cor, tamanho..."></textarea>
+      </section>
+
+      <button type="submit" class="btn zap-btn">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        Enviar pelo WhatsApp
+      </button>
+      <p class="nota">Vai abrir o WhatsApp com a mensagem pronta. Basta tocar em enviar.</p>
+    </form>
+
+    <aside class="lateral">
+      <div class="painel">
+        <h3>Como funciona</h3>
+        <ol>
+          <li>Preencha o formulário ao lado.</li>
+          <li>Toque em enviar: o WhatsApp abre com o pedido pronto.</li>
+          <li>Respondemos para confirmar preço e entrega.</li>
+        </ol>
+      </div>
+      <div class="painel destaque">
+        <h3>Prefere falar connosco?</h3>
+        <p>Tire dúvidas antes de encomendar.</p>
+        <a class="btn" data-zap target="_blank" rel="noopener">Abrir WhatsApp</a>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="rodape">
+  <p class="copy">© 2026 Sendix. Todos os direitos reservados.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
