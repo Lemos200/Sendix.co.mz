@@ -11,7 +11,7 @@
 *,*::before,*::after{box-sizing:border-box}
 body{
     margin:0;font:400 16px/1.55 Inter,system-ui,sans-serif;color:var(--texto);
-    background:#fff}
+    background:#d7d7d7}
 h1,h2,h3,h4{margin:0}
 a{color:inherit
 }
@@ -81,6 +81,54 @@ a{color:inherit
     height:28px;
     background:var(--verde);
     border-radius:6px}
+
+/* Ícones do menu */
+#menu ul li a:not(.btn) i {
+    margin-right: 7px;
+    font-size: 14px;
+}
+
+/* Ícones dos botões */
+.btn i,
+.btn_encomendar i {
+    margin-right: 7px;
+}
+
+/* Efeito suave nos botões */
+.btn i,
+.btn_encomendar i {
+    transition: transform 0.2s ease;
+}
+
+.btn:hover i,
+.btn_encomendar:hover i {
+    transform: translateY(-2px);
+}
+
+/* Ícones da faixa de vantagens */
+.faixa .in span i {
+    margin-right: 7px;
+    font-size: 18px;
+}
+
+/* Ícones dos títulos dos produtos */
+.card .info h3 i {
+    margin-right: 6px;
+}
+
+/* Rodapé */
+.rodape h4 i {
+    margin-right: 7px;
+}
+
+.rodape .in > div span i {
+    margin-right: 7px;
+}
+
+/* Botão do menu mobile */
+.menu-btn i {
+    font-size: 23px;
+}
 
 .topo nav ul{
     list-style:none;

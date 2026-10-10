@@ -3,8 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sua Empresa | Encomendas</title>
+<title>Sua loja virtual | Encomendas</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,15 +16,46 @@
 <header class="topo">
   <div class="in">
     <a class="logo" href="index.html">Sindex</a>
-    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
-    <nav id="menu" aria-label="Principal">
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a class="btn" href="pedido.html">Fazer Pedido</a></li>
-      </ul>
+   
+<button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">
+  <i class="fa-solid fa-bars" aria-hidden="true"></i>
+</button>
+
+<nav id="menu" aria-label="Principal">
+  <ul>
+    <li>
+      <a href="index.html">
+        <i class="fa-solid fa-house" aria-hidden="true"></i>
+        Início
+      </a>
+    </li>
+    <li>
+      <a href="#produtos">
+        <i class="fa-solid fa-box-open" aria-hidden="true"></i>
+        Produtos
+      </a>
+    </li>
+    <li>
+      <a href="#sobre">
+        <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+        Sobre
+      </a>
+    </li>
+    <li>
+      <a href="#contacto">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        Contacto
+      </a>
+    </li>
+    <li>
+      <a class="btn" href="pedido.html">
+        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+        Fazer Pedido
+      </a>
+    </li>
+  </ul>
+</nav>
+
     </nav>
   </div>
 </header>
@@ -33,21 +67,30 @@
     <div class="hero-txt">
       <h1>Os melhores produtos para o seu dia a dia</h1>
       <p>Escolha, encomende e receba. Confirmamos tudo pelo WhatsApp.</p>
-      <a class="btn" href="pedido.html">Fazer Pedido</a>
+      <a class="btn" href="pedido.html">
+  <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+  Fazer Pedido
+</a>
     </div>
   </div>
   <div class="item" style="background-image:url(images/hero2.jpg)">
     <div class="hero-txt">
       <h1>Novidades chegaram</h1>
       <p>Veja os produtos mais recentes da nossa coleção.</p>
-      <a class="btn" href="#produtos">Ver produtos</a>
+      <a class="btn" href="#produtos">
+  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+  Ver produtos
+</a>
     </div>
   </div>
   <div class="item" style="background-image:url(images/hero3.jpg)">
     <div class="hero-txt">
       <h1>Encomendas sob medida</h1>
       <p>Diga-nos o que precisa e preparamos para si.</p>
-      <a class="btn" href="pedido.html">Fazer Pedido</a>
+      <a class="btn" href="pedido.html">
+  <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+  Fazer Pedido
+</a>
     </div>
   </div>
   <button class="seta seta-e" aria-label="Anterior">‹</button>
@@ -56,13 +99,26 @@
 </section>
 
 <!-- ============ FAIXA DE VANTAGENS ============ -->
+
 <div class="faixa">
   <div class="in">
-    <span>🚚 Entrega rápida</span>
-    <span>✅ Qualidade garantida</span>
-    <span>💬 Atendimento pelo WhatsApp</span>
+    <span>
+      <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
+      Entrega rápida
+    </span>
+
+    <span>
+      <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+      Qualidade garantida
+    </span>
+
+    <span>
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+      Atendimento pelo WhatsApp
+    </span>
   </div>
 </div>
+
 
 <!-- ============ PRODUTOS EM DESTAQUE ============ -->
 <!-- Troque as imagens: images/produto1.jpg ... produto4.jpg -->
@@ -70,21 +126,21 @@
 <div class="grade">
   <article class="card">
     <!-- <span class="selo">Novo</span> -->
-    <img src="imagens/ferragem.jpg" alt="">
+    <img src="ferragem.jpg" alt="">
     <div class="info">
       <h3>Materiais de Ferragem</h3>
      
     </div>
   </article>
   <article class="card">
-   <img src="imagens/Acessorios.jpg" alt="">
+   <img src="Acessorios.jpg" alt="">
     <div class="info">
       <h3>Acessórios e Telefones</h3>
      
     </div>
   </article>
   <article class="card">
-    <img src="imagens/Roupa.jpg" alt="">
+    <img src="Roupa.jpg" alt="">
     <div class="info">
       <h3>Roupas e Calçados</h3>
      
@@ -92,21 +148,28 @@
   </article>
   <article class="card">
     <!-- <span class="selo promo">Promoção</span> -->
-    <img src="imagens/Moda.jpg" alt="">
+    <img src="Moda.jpg" alt="">
     <div class="info">
       <h3>Acessórios de Moda e outros...</h3>
     </div>
   </article>
 </div>
 <br>
-  <a class="btn_encomendar" href="pedido.html">Encomendar</a>
+ <a class="btn_encomendar" href="pedido.html">
+  <i class="fa-solid fa-cart-plus" aria-hidden="true"></i>
+  Encomendar agora
+</a>
 <!-- ============ BANNER ============ -->
 <!-- Imagem: images/banner.jpg -->
 <section class="banner">
-  <div class="banner-in" style="background-image:url(images/banner.jpg)">
+  <div class="banner-in" style="background-image:url(banner.jpg)">
     <h2>Encomende hoje, receba sem complicação</h2>
     <p>Preencha o pedido em um minuto e fale diretamente connosco.</p>
-    <a class="btn" href="pedido.html">Fazer Pedido</a>
+   <a class="btn" href="pedido.html">
+  <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+  Fazer Pedido
+</a>
+
   </div>
 </section>
 
@@ -131,7 +194,7 @@
 <section class="zap">
   <div class="in">
     <div><strong>Prefere falar connosco?</strong><br>Tire dúvidas e faça o seu pedido pelo WhatsApp.</div>
-    <a class="btn" data-zap target="_blank" rel="noopener">Falar no WhatsApp</a>
+    <a class="btn" data-zap target="_blank" rel="noopener"> <i class="fa-brands fa-whatsapp"></i>Falar no WhatsApp</a>
   </div>
 </section>
 
@@ -139,20 +202,37 @@
 <footer class="rodape" id="contacto">
   <div class="in">
     <div>
-      <h4>Links rápidos</h4>
+      
+<h4>
+  <i class="fa-solid fa-link" aria-hidden="true"></i>
+  Links rápidos
+</h4>
       <a href="index.html">Início</a>
       <a href="#produtos">Produtos</a>
       <a href="pedido.html">Fazer Pedido</a>
     </div>
     <div>
-      <h4>Atendimento</h4>
+      <h4>
+  <i class="fa-solid fa-headset" aria-hidden="true"></i>
+  Atendimento
+</h4>
       <a href="#sobre">Sobre nós</a>
       <a data-zap target="_blank" rel="noopener">WhatsApp</a>
     </div>
     <div>
-      <h4>Contacto</h4>
-      <span>+258 853539758</span>
-      <span>Maputo, Moçambique</span>
+      <h4>
+  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+  Contacto
+</h4>
+     <span>
+  <i class="fa-solid fa-phone" aria-hidden="true"></i>
+  +258 853539758
+</span>
+
+     <span>
+  <i class="fa-solid fa-map-marker-alt" aria-hidden="true"></i>
+  Maputo, Moçambique
+</span>
     </div>
   </div>
   <p class="copy">© 2026 Sendix. Todos os direitos reservados.</p>
